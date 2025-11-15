@@ -1,0 +1,7 @@
+name: company_orchestrator
+agent_class: SequentialAgent
+description: Orchestrates the parallel execution of specialized agents to gather
+  various financial data, then passes results to an aggregator.
+sub_agents:
+  - config_path: ./financial_data_orchestrator.yaml
+  - config_path: ./final_aggregator_agent.yaml

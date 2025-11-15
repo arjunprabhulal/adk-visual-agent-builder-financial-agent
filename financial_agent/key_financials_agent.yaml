@@ -1,0 +1,11 @@
+name: key_financials_agent
+model: gemini-2.5-flash
+agent_class: LlmAgent
+description: Agent for extracting key financial metrics like EBITDA, EPS, and Net Revenue.
+instruction: >
+  You are a financial data extractor. Given a company ticker, use your tools to
+  find key financial metrics such as EBITDA, EPS, and Net Revenue, and report
+  them.
+sub_agents: []
+tools:
+  - name: google_search

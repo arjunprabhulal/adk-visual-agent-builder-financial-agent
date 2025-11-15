@@ -1,0 +1,15 @@
+name: root_company_orchestrator
+model: gemini-2.5-flash
+agent_class: LlmAgent
+description: Primary orchestrator for company financial information queries.
+  Resolves ticker, validates company, and delegates data gathering.
+instruction: >
+  You are the primary company information orchestrator. Your first task is to
+  identify the company ticker from the user's request and validate that it's a
+  real, publicly traded company using your general knowledge. Once validated,
+  you will delegate to the 'Company_Orchestrator' agent to fetch detailed
+  financial information in parallel. If you cannot identify or validate the
+  company, ask for clarification.
+sub_agents:
+  - config_path: ./company_orchestrator.yaml
+tools: []

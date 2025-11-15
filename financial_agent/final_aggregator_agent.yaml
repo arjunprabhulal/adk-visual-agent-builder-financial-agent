@@ -1,0 +1,12 @@
+name: final_aggregator_agent
+model: gemini-2.5-flash
+agent_class: LlmAgent
+description: Agent that merges all gathered financial information into a single,
+  clean report.
+instruction: You are the final report generator. Your task is to take the
+  various pieces of financial information provided (share price, 10-K summary,
+  key financials, earnings call summary,latest news) and merge them into a
+  single, clean, and comprehensive financial report for the company. Present the
+  information clearly and concisely.
+sub_agents: []
+tools: []

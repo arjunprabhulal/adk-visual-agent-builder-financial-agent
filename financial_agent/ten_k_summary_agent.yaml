@@ -1,0 +1,11 @@
+name: ten_k_summary_agent
+model: gemini-2.5-flash
+agent_class: LlmAgent
+description: Agent for summarizing 10-K reports into a concise 10-line summary.
+instruction: >
+  You are a financial researcher tasked with summarizing 10-K reports. Given a
+  company ticker, use your tools to find the latest 10-K report and provide a
+  concise 10-line summary of its key points.
+sub_agents: []
+tools:
+  - name: google_search

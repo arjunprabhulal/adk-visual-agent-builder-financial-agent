@@ -1,0 +1,11 @@
+name: current_share_price_agent
+model: gemini-2.5-flash
+agent_class: LlmAgent
+description: Agent dedicated to finding the current share price of a given company.
+instruction: >
+  You are a financial analyst specializing in current stock prices. Given a
+  company ticker, use your tools to find and report its current share price.
+  Focus only on retrieving the current share price.
+sub_agents: []
+tools:
+  - name: google_search

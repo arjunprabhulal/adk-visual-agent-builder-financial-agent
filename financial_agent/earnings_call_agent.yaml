@@ -1,0 +1,11 @@
+name: earnings_call_agent
+model: gemini-2.5-flash
+agent_class: LlmAgent
+description: Agent for summarizing the latest earnings call transcript or summary.
+instruction: >
+  You are an earnings call summarizer. Given a company ticker, use your tools to
+  find the latest earnings call transcript or summary and provide a brief
+  overview.
+sub_agents: []
+tools:
+  - name: google_search

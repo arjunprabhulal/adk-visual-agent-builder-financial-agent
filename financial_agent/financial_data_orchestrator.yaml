@@ -1,0 +1,10 @@
+name: financial_data_orchestrator
+agent_class: ParallelAgent
+description: Executes multiple data gathering agents concurrently to fetch
+  financial details.
+sub_agents:
+  - config_path: ./current_share_price_agent.yaml
+  - config_path: ./ten_k_summary_agent.yaml
+  - config_path: ./key_financials_agent.yaml
+  - config_path: ./earnings_call_agent.yaml
+  - config_path: ./latest_news_agent.yaml
