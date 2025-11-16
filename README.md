@@ -2,6 +2,8 @@
 
 A **no-code** visual interface for building and managing AI agents using Google's Agent Development Kit (ADK). Build complex multi-agent systems through an intuitive drag-and-drop interface without writing any YAML or code.
 
+📖 **Read the full blog post**: [Build AI Agents with Google ADK Visual Agent Builder](https://arjunprabhulal.com/blog/google-adk-visual-agent-builder/)
+
 ![ADK Visual Builder - No Code Interface](.images/adk-no-code-builder.png)
 
 *The ADK Visual Builder provides a complete no-code interface for building and managing AI agents*
@@ -229,6 +231,7 @@ This allows you to:
 
 ## Resources
 
+- [Build AI Agents with Google ADK Visual Agent Builder](https://arjunprabhulal.com/blog/google-adk-visual-agent-builder/) - Comprehensive blog post with step-by-step guide
 - [ADK Python v1.18.0 Release Notes](https://github.com/google/adk-python/releases/tag/v1.18.0) - Includes Visual Agent Builder features
 - [ADK Python GitHub Repository](https://github.com/google/adk-python)
 
